@@ -1,2 +1,6 @@
 # LIBRARY_MANAGEMENT
-A Java program for Library Management. Users can view books, issue, and return them. It uses classes and arrays to track book status and demonstrates basic object-oriented programming with a console-based interactive menu.
+This program is a basic Library Management System that uses Java's object-oriented features to simulate book tracking, including inventory management and the status of loans. It is organized into three primary layers: the data model, the collection manager, and the user interface.
+
+The system relies on the Book class to represent each individual volume, holding its unique ID, title, and a boolean flag (isIssued) that acts as a toggle between "Available" and "Issued" states. The Library class functions as the central controller, maintaining an array of these Book objects. It contains the core business logic, such as searching through the array to check a book's current status before allowing it to be issued or returned, ensuring that a book cannot be double-issued or returned if it wasn't checked out.
+
+The Main class drives the program through a simple interactive loop. It pre-loads the library with five books and provides a menu for the user to view the collection or perform transactions. By using these classes together, the code effectively demonstrates encapsulation—where the details of how a book's status is updated are hidden within the Library class methods, making the main program cleaner and more reliable.
